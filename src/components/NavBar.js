@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 
 
 const NavBar = () => {
@@ -6,10 +8,10 @@ const NavBar = () => {
     <div className="topnav">
       <a className="logo" href="/">Danielle Ellis</a>
       <div className="justify-content-end" id="navbarDefault"/>
-      <a className="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portolio">Portfolio</a>
-      <a href="#blog">Blog</a>
+      <NavLink className="active" to="/" exact>Home</NavLink>
+      <NavLink to="/about" exact>About</NavLink>
+      <NavLink to="/portfolio" exact>Portfolio</NavLink>
+      <NavLink to="/blog" exact>Blog</NavLink>
     </div>
   )
 }
@@ -36,6 +38,7 @@ const NavBar = () => {
                 }}
               >Home</NavLink>
             </li>
+
             <li className='nav-item'>
               <NavLink
                 className='nav-link'
