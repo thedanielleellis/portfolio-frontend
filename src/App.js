@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import 'bootswatch/dist/litera/bootstrap.min.css';
+import Home from './components/Home'
+
 
 class App extends React.Component {
   render () {
     return (
       <div className = "App">
-      I'm React
+      <Home />
       </div>
     )
   }
