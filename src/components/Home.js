@@ -4,7 +4,7 @@ const Home = (props) => {
   return (
     <div className="home">
       <div className="home-left">
-        <img src="https://i.imgur.com/UfrUbLq.jpg" alt="Riley Slayden Headshot"/>
+        <img src="https://i.imgur.com/UfrUbLq.jpg" alt="Danielle Ellis Headshot"/>
         <div className="social">
           <h2>Danielle Ellis</h2>
           <p>Dallas, TX</p>
@@ -20,12 +20,10 @@ const Home = (props) => {
           Hello, my name is Danielle Ellis! This will be my About Me Section.</p>
         <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
-        </p>
-        <hr className="line"/>
-    
+        </p>    
       </div>
     </div>
   );
-};
+}; 
 
 export default Home;

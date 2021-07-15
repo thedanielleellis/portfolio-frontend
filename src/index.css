@@ -1,30 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import '~font-awesome/css/font-awesome';
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.home-left {
-  display: inline-block;
-  width: 100%;
+home-left {
+  flex: 1;
+  padding-left: 100px;
   margin-top: 20px;
 }
 
 .home-right {
-  display: block;
-  width: 100%;
+  flex: 2;
+  text-align: left;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .home {
-  display: block;
+  display: flex;
+  font-size: 25px;
 }
 
 .home-card {
@@ -55,3 +46,24 @@ code {
   border: 2px solid lightblue;
   filter: drop-shadow(0 0 0.75rem lightblue);
 }
+
+.social {
+  margin-top: 30px;
+  color: white;
+  line-height: 40px;
+  font-style: italic;
+}
+
+.social p {
+  color: lightblue;
+}
+
+
+
+
+
+
+
+/****************************** TESTING ************************/
+
+
