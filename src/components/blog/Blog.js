@@ -12,7 +12,6 @@ const Blog = ({ blogPosts }) => {
   return (
     <div className='component'>
       <div className='title-with-icon'>
-        <img src={icon} alt='blog icon' />
         <h1>BLOG</h1>
       </div>
       {blogPostList}
