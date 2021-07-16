@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
-import { Markup } from 'interweave';
 import CommentsContainer from '../../containers/CommentsContainer'
 
 // add `match` to arguments to access the path info in `routerProps` passed from ProjectsContainer
@@ -39,7 +38,8 @@ const ProjectDetails = ({ match, projects }) => {
             <h6>Why did I decide to build this app?</h6>
             <p>{project.reason}</p>
             <h6>Features</h6>
-            <Markup content={project.features} allowElements='true' />
+
+
           </div>
           {project.blog_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.blog_url, "_blank")}>BLOG POST</button> : null}
           {project.github_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.github_url, "_blank")}>SOURCE CODE</button> : null}

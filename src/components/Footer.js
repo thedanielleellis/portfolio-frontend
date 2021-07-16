@@ -16,7 +16,7 @@ const Contact = () => {
             <a href="https://github.com/thedanielleellis" target="_blank" rel="noopener noreferrer">
              <img alt="linkedin_icon" src={Github} />
              </a>
-            <a href="https://dev.to/jacquelinelam" target="_blank" rel="noopener noreferrer">
+            <a href="https://dev.to/thedanielleellis" target="_blank" rel="noopener noreferrer">
              <img alt="linkedin_icon" src={Blog} />
             </a>
             <a href="mailto:thedanielleellis@gmail.com" target="_blank" rel="noopener noreferrer">

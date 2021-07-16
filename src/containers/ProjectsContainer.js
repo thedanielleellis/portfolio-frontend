@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import ProjectList from '../components/projects/ProjectList'
 import ProjectDetails from '../components/projects/ProjectDetails'
 import { fetchProjects } from "../actions/fetchProjects";
+import Loading from '../images/loading.gif'
 
 class ProjectsContainer extends Component {
   componentDidMount() {
@@ -11,7 +12,7 @@ class ProjectsContainer extends Component {
   }
 
   render() {
-    const { filteredProjects, stacks, selectedStackIds, loading, addFilter, removeFilter } = this.props
+    const {loading} = this.props
     return (
       <div id='projects-container' className='component'>
         {
@@ -21,13 +22,12 @@ class ProjectsContainer extends Component {
             < >
               {/* define parameter name in route path - show up in match.params */}
               {/* replace `component` prop w/ `render` prop so we can pass route info to `ProjectDetails` component*/}
-              <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={filteredProjects} />} />
+              <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} />} />
               <Route exact path='/projects' render={() =>
                 <div id='portfolio'>
                   <h1>PORTFOLIO</h1>
                   <h3>My Latest Projects</h3>
-                  <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
-                  <ProjectList filteredProjects={filteredProjects} />
+                  <ProjectList />
                 </div>
               } />
             </ >
@@ -53,10 +53,7 @@ const mapDispatchToProps = dispatch => {
   return {
     // wrap actions in a dispatch & anonymous fn to pass them as callback props
     // when called, dispstch fn will invoke reducer and result in new updated state
-    fetchStacks: () => dispatch(fetchStacks()),
     fetchProjects: () => dispatch(fetchProjects()),
-    addFilter: stackId => dispatch(addFilter(stackId)),
-    removeFilter: stackId => dispatch(removeFilter(stackId))
   }
 }
 
