@@ -7,7 +7,6 @@ const NavBar = () => {
   return (
     <div className="topnav">
       <a className="logo" href="/">Danielle Ellis</a>
-      <div className="justify-content-end" id="navbarDefault"/>
       <NavLink to="/" exact>Home</NavLink>
       <NavLink to="/about" exact>About</NavLink>
       <NavLink to="/portfolio" exact>Portfolio</NavLink>
