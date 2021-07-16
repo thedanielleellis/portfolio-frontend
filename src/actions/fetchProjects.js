@@ -12,3 +12,4 @@ export const fetchProjects = () => {
         // action dispatched along with a payload of the projects JSON collection
         .then(respJSON => dispatch({ type: 'ADD_PROJECTS', projects: respJSON }));
     }
+}
