@@ -3,11 +3,91 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-image: url("https://i.imgur.com/prrmSTk.jpg");
-
 }
+
+
+
+div.component {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#portfolio h1, #blog-container h1{
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #8fbdba 65%);
+  display: inline;
+  font-size: 4rem;
+}
+
+.text{
+  display: inline-block;
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.text-section {
+  padding-top: 4%;
+}
+
+.text-section#skills {
+  padding-top: 5%;
+}
+
+form {
+  margin: 2%;
+}
+
+.badge, .btn, .btn-group-toggle {
+  margin-left: 0.5%;
+  margin-bottom: 10px;
+}
+
+.button-wrapper .btn{
+  margin-bottom: 6px;
+}
+
+.blog .card, .comment-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width:767px){
+  nav#mainNav {
+    background-color: transparent;
+  }
+  li .nav-link.js-scroll {
+     font-size: smaller;
+     /* text-align: right; */
+  }
+  div.component {
+    padding-top: 10%;
+  }
+  div#about{
+    margin-top: 0rem;
+  }
+
+  div.sidenav img{
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+  }
+  div.sidenav {
+    height: 260px;
+    width: 80px;
+  }
+  div.sidenav a {
+    padding: 5px;
+  }
+}
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # HOME 
@@ -79,6 +159,9 @@ body {
 .contact img:hover {
   transform: scale(1.5);
 }
+
+
+
 
 /*--------------------------------------------------------------
 # NAVBAR
@@ -165,7 +248,7 @@ body {
 }
 
 /* --------------------------------
-  # Blog Post
+  # BLOG
 -----------------------------------*/
 .blog {
   width: 80%;
@@ -205,119 +288,8 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* **********************OTHER CODE ***********************/
-
-
-
-
-.title-with-icon img {
-  /* margin-right: 10px; */
-  display: block;
-  margin: auto;
-  height: 60px;
-  width: 60px;
-  margin-bottom: 0px;
-}
-
-div.component {
-  /* margin-top: 150px; */
-  /* display:'inline-block';
-  text-align: 'left'; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  /* padding: 10px; */
-}
-
-#portfolio h1, #blog-container h1{
-  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #8fbdba 65%);
-  display: inline;
-  font-size: 4rem;
-}
-
-.text{
-  display: inline-block;
-  text-align: left;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.text-section {
-  padding-top: 4%;
-}
-
-.text-section#skills {
-  padding-top: 5%;
-}
-
-form {
-  margin: 2%;
-}
-
-.badge, .btn, .btn-group-toggle {
-  margin-left: 0.5%;
-  margin-bottom: 10px;
-}
-
-.button-wrapper .btn{
-  margin-bottom: 6px;
-}
-
-.blog .card, .comment-card {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media only screen and (max-width:767px){
-  nav#mainNav {
-    background-color: transparent;
-  }
-  li .nav-link.js-scroll {
-     font-size: smaller;
-     /* text-align: right; */
-  }
-  div.component {
-    padding-top: 10%;
-  }
-  div#about{
-    margin-top: 0rem;
-  }
-
-  div.sidenav img{
-    width: 20px;
-    height: 20px;
-    margin-top: 1px;
-  }
-  div.sidenav {
-    height: 260px;
-    width: 80px;
-  }
-  div.sidenav a {
-    padding: 5px;
-  }
-}
-
-
-
-/* --------------------------------
-  # Contact - side nav
------------------------------------*/
-
-
-
-
 /*--------------------------------------------------------------
-# Portfolio
+# PROJECTS
 --------------------------------------------------------------*/
 
 #filters-container {
@@ -365,7 +337,7 @@ img.project-thumbnail {
 }
 
 /* -------------------------------------------------------------
-Comments
+COMMENTS
 ---------------------------------------------------------------*/
 .comment-card {
   margin-bottom: 10px;
@@ -392,33 +364,6 @@ input#formAuthor, input#formEmail, textarea#formContent {
 
 
 
-.footer {
-  padding: 1rem;
-  background: #8a8a8a;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer .footer-icons li:last-of-type {
-  margin-right: 0;
-}
-
-.footer .footer-icons .fa {
-  font-size: 1.3rem;
-  color: #fefefe;
-}
-
-.footer .footer-icons .fa:hover {
-  color: #4a4a4a;
-  transition: color 0.3s ease-in;
-}
 
 
 
