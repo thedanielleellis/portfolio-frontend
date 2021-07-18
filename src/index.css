@@ -84,11 +84,11 @@ body {
 # NAVBAR
 --------------------------------------------------------------*/
 .topnav {
-  background-color: #f8f0e3;
+  background-color: transparent;
   overflow: hidden;
+  
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #000000;
@@ -97,6 +97,17 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
+
+.nav-right {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -110,11 +121,11 @@ body {
   color: white;
 }
 
-.logo {
-  color: rgb(123, 160, 207);
-  font-size: 1.6rem;
-  font-weight: 600;
+#logo { 
+  float: left;
+  display: inline-block;
 }
+
 
 
 /*--------------------------------------------------------------
