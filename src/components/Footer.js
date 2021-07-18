@@ -6,9 +6,26 @@ import Email from '../images/email.png'
 
 const Contact = () => {
   return (
-    <footer class="footer">
-      <p>© Danielle Ellis 2021</p>
-        <div id='contact' className='contact'>
+    <footer className="footer">
+      <div className="footer-left">
+        <p>© Danielle Ellis 2021</p>
+      </div>
+        <div className="footer-icons">
+          <ul class= "menue simple">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+    </footer>
+  )
+}
+
+export default Contact
+
+/*
+<div id='contact' className='contact'>
             <div className='decoration-line'>CONTACT</div>
             <a href="https://www.linkedin.com/in/daniellerichardson1/" target="_blank" rel="noopener noreferrer">
             <img alt="linkedin_icon" src={Linkedin} />
@@ -22,10 +39,4 @@ const Contact = () => {
             <a href="mailto:thedanielleellis@gmail.com" target="_blank" rel="noopener noreferrer">
              <img alt="email_icon" src={Email} />
              </a>
-    
-      </div>
-    </footer>
-  )
-}
-
-export default Contact
+        </div> */

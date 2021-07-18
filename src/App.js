@@ -17,8 +17,6 @@ class App extends React.Component {
     return (
       <div className = "App" id='page-top'>
         <NavBar />
-        <Footer />
-        {/* When URL matches specified path, render component */}
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
         <Route path='/blog' component={BlogPostsContainer} />

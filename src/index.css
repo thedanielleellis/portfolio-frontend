@@ -36,6 +36,22 @@ body {
   transform: scale(1.5);
 }
 
+.social-wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+}
+.social {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 0;
+}
+.social a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: auto;
+}
+
 /*--------------------------------------------------------------
 # FOOTER 
 --------------------------------------------------------------*/
@@ -361,6 +377,37 @@ input#formAuthor, input#formEmail, textarea#formContent {
 
 
 
+
+
+
+
+.footer {
+  padding: 1rem;
+  background: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.footer .footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.footer .footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
 
 
 

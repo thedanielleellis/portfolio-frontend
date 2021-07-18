@@ -11,12 +11,11 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div id='project-list'>
-      {/* render React Router LInks for each project */}
+      {/* render React Router Links for each project */}
       <Link key={project.id} to={`/projects/${project.id}`}>
         <h4>{project.name}</h4>
       </Link>
       <img className='project-thumbnail' alt='project thumbnail' src={img} />
-      <i>{projectStacks}</i>
       <hr />
     </div >
   );
