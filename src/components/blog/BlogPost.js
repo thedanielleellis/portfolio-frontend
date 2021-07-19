@@ -22,14 +22,13 @@ const BlogPost = ({ blogPost }) => {
             <Card.Title>{blogPost.title}</Card.Title>
             {renderTags}<br />
             <Card.Text>{blogPost.description}</Card.Text>
-            <button className="btn btn-danger btn-lg" onClick={() => window.open(blogPost.url, "_blank")}>READ POST</button>
+            <button className="btn btn-outline-dark btn-lg" onClick={() => window.open(blogPost.url, "_blank")}>READ BLOG</button>
           </Card.Body>
           <Card.Footer>
             <small className='text-muted'>Posted on <Moment format='MMM DD, YYYY'>{blogPost.published_timestamp}</Moment></small>
           </Card.Footer>
         </Card>
       </div>
-      <div className='post-block-color'></div>
     </div >
   )
 };
