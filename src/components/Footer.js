@@ -6,10 +6,11 @@ import Email from '../images/email.png'
 
 const Contact = () => {
   return (
-    <footer class="footer">
-      <p>© Danielle Ellis 2021</p>
-        <div id='contact' className='contact'>
-            <div className='decoration-line'>CONTACT</div>
+    <footer className="footer">
+      <div className="left-footer">
+        <p>© Danielle Ellis 2021</p>
+      </div>
+      <div id='contact' className='contact right-footer'>
             <a href="https://www.linkedin.com/in/daniellerichardson1/" target="_blank" rel="noopener noreferrer">
             <img alt="linkedin_icon" src={Linkedin} />
             </a>
@@ -22,8 +23,7 @@ const Contact = () => {
             <a href="mailto:thedanielleellis@gmail.com" target="_blank" rel="noopener noreferrer">
              <img alt="email_icon" src={Email} />
              </a>
-    
-      </div>
+          </div>      
     </footer>
   )
 }

@@ -85,10 +85,6 @@ form {
 
 
 
-
-
-
-
 /*--------------------------------------------------------------
 # HOME 
 --------------------------------------------------------------*/
@@ -143,10 +139,9 @@ form {
   background-color: #f8f0e3;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 16px;
   margin-bottom: 0%;
   overflow:auto;
-
 }
 
 .contact img {
@@ -160,8 +155,23 @@ form {
   transform: scale(1.5);
 }
 
+.right-footer {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-
+.left-footer {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
 /*--------------------------------------------------------------
 # NAVBAR
