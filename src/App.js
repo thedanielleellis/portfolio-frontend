@@ -6,6 +6,8 @@ import NavBar from './components/NavBar'
 import About from './components/About'
 import Footer from './components/Footer'
 import BlogPostsContainer from './containers/BlogPostsContainer'
+import Project from './components/projects/Project.js';
+
 
 
 
@@ -20,6 +22,7 @@ class App extends React.Component {
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
         <Route path='/blog' component={BlogPostsContainer} />
+        <Route path='/portfolio' component={Project} />
       </div>
     );
   }

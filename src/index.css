@@ -1,12 +1,16 @@
+* {
+  margin : 0;
+  padding : 0;
+  border : none;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   background-image: url("https://i.imgur.com/prrmSTk.jpg");
+  
 }
-
-
 
 div.component {
   margin-left: auto;
@@ -14,8 +18,7 @@ div.component {
   width: 80%;
 }
 
-#portfolio h1, #blog-container h1{
-  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #8fbdba 65%);
+#portfolio h1, #blog-container h1, #about-text h1{
   display: inline;
   font-size: 4rem;
 }
@@ -31,9 +34,6 @@ div.component {
   padding-top: 4%;
 }
 
-.text-section#skills {
-  padding-top: 5%;
-}
 
 form {
   margin: 2%;
@@ -52,37 +52,6 @@ form {
   margin-left: auto;
   margin-right: auto;
 }
-
-@media only screen and (max-width:767px){
-  nav#mainNav {
-    background-color: transparent;
-  }
-  li .nav-link.js-scroll {
-     font-size: smaller;
-     /* text-align: right; */
-  }
-  div.component {
-    padding-top: 10%;
-  }
-  div#about{
-    margin-top: 0rem;
-  }
-
-  div.sidenav img{
-    width: 20px;
-    height: 20px;
-    margin-top: 1px;
-  }
-  div.sidenav {
-    height: 260px;
-    width: 80px;
-  }
-  div.sidenav a {
-    padding: 5px;
-  }
-}
-
-
 
 
 /*--------------------------------------------------------------
@@ -142,6 +111,7 @@ form {
   padding: 0px 16px;
   margin-bottom: 0%;
   overflow:auto;
+
 }
 
 .contact img {
@@ -201,7 +171,6 @@ form {
 }
 
 
-
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #d6c4be;
@@ -220,20 +189,19 @@ form {
 }
 
 
-
 /*--------------------------------------------------------------
 # ABOUT
 --------------------------------------------------------------*/
-
 #about {
   position: absolute;
   width: 100%;
   height: auto;
-  padding: 10rem 0;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 #about-text {
-  color: #EBEBF3;
+  color: #000000;
   text-align: center;
   margin-top: 1%;
   padding-top: 0;
@@ -241,11 +209,6 @@ form {
   line-height: 200%;
 }
 
-#about-text h1{
-  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #8fbdba 65%);
-  display: inline;
-  font-size: 4rem;
-}
 
 #about-text h2{
   display: block;

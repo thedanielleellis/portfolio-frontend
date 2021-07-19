@@ -11,9 +11,7 @@ const Blog = ({ blogPosts }) => {
 
   return (
     <div className='component'>
-      <div className='title-with-icon'>
         <h1>BLOG</h1>
-      </div>
       {blogPostList}
     </div>
   );
