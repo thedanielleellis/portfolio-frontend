@@ -9,6 +9,7 @@ class Home extends Component {
         return (
             <div id='home'>
                 <div className="container1">
+                    <div className="headshot">
                     <img src="https://i.imgur.com/UfrUbLq.jpg" alt="Danielle Ellis Headshot" width="300" height="300"/>  
                     <h1 className="title"> DANIELLE ELLIS </h1>
                     <h3>Full-Stack Software Engineer</h3>
@@ -21,7 +22,7 @@ class Home extends Component {
                             <img alt="linkedin_icon" src={Linkedin} />
                             </a>
                             <a href="https://github.com/thedanielleellis" target="_blank" rel="noopener noreferrer">
-                            <img alt="linkedin_icon" src={Github} />
+                            <img alt="linkedin_icon" src={Github}/>
                             </a>
                             <a href="https://dev.to/thedanielleellis" target="_blank" rel="noopener noreferrer">
                             <img alt="linkedin_icon" src={Blog} />
@@ -32,6 +33,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }

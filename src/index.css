@@ -57,7 +57,7 @@ form {
 /*--------------------------------------------------------------
 # HOME 
 --------------------------------------------------------------*/
-.container1 img {
+.headshot img {
   border-radius: 50%;
 }
 
@@ -86,11 +86,13 @@ form {
   text-align: center;
   font-size: 0;
 }
+
 .social {
   display: inline-block;
   margin: 0 auto;
   font-size: 0;
 }
+
 .social a {
   display: inline-block;
   margin: 0 5px;
