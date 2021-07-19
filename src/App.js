@@ -1,16 +1,13 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home'
-import NavBar from './components/NavBar'
-import About from './components/About'
-import Footer from './components/Footer'
-import BlogPostsContainer from './containers/BlogPostsContainer'
+import Home from './components/Home';
+import NavBar from './components/NavBar';
+import About from './components/About';
+import Footer from './components/Footer';
+import BlogPostsContainer from './containers/BlogPostsContainer';
 import Project from './components/projects/Project.js';
-
-
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends React.Component {

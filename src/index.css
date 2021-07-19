@@ -102,16 +102,10 @@ form {
 --------------------------------------------------------------*/
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f8f0e3;
-  color: black;
-  text-align: center;
-  padding: 0px 16px;
-  margin-bottom: 0%;
-  overflow:auto;
-
+  background-color: #d6c4be;
+  overflow: hidden;
 }
 
 .contact img {
