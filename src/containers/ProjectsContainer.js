@@ -1,0 +1,40 @@
+import React from 'react'
+import { connect } from 'react-redux';
+import { Route } from 'react-router-dom';
+import ProjectList from '../components/projects/ProjectList'
+import ProjectDetails from '../components/projects/ProjectDetails'
+import { fetchProjects } from "../actions/fetchProjects";
+
+
+class ProjectsContainer extends React.Component {
+    componentDidMount() {
+      this.props.fetchProjects()
+    }
+
+    render() {
+        return (
+          <div id='projects-container' className='component'>
+                < >
+                  <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} />} />
+                  <Route exact path='/projects' render={() =>
+                    <div id='portfolio'>
+                      <h1>PORTFOLIO</h1>
+                      <h3>My Latest Projects</h3>
+                      <ProjectList />
+                    </div>
+                  } />
+                </ >
+        
+            </div >
+        )
+      
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchProjects: () => dispatch(fetchProjects()),
+    }
+}
+      
+export default connect(null, mapDispatchToProps)(ProjectsContainer)
