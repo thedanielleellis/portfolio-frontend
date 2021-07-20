@@ -1,6 +1,24 @@
-export default (state = [], action) => {
+const projectsReducer = (state = {
+    allProjects: [], 
+    loading: false,
+    }, action) => {
     switch (action.type) {
+        case "LOAD_PROJECTS":
+            return {
+                ...state,
+                allProjects: [...state.allProjects],
+                loading: true
+            }
+        case "ADD_PROJECTS":
+            return {
+                ...state,
+                allProjects: action.projects,
+                loading: false
+            }
+            
         default:
-            return state
+            return state;
     }
 }
+
+export default projectsReducer;
