@@ -3,7 +3,7 @@ import projectsReducer from './projectsReducer'
 import blogPostsReducer from './blogPostsReducer'
 
 const rootReducer = combineReducers({
-    projects: projectsReducer,
+    projects: projectsReducer, 
     blog: blogPostsReducer
   });
   
