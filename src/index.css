@@ -61,7 +61,7 @@ form {
   border-radius: 50%;
 }
 
-.container1 {
+.home-container {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -145,7 +145,6 @@ form {
 .topnav {
   background-color: transparent;
   overflow: hidden;
-  
 }
 
 .topnav a {

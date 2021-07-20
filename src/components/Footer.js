@@ -4,7 +4,7 @@ import Github from '../images/github.png'
 import Blog from '../images/blog.png'
 import Email from '../images/email.png'
 
-const Contact = () => {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="left-footer">
@@ -28,4 +28,4 @@ const Contact = () => {
   )
 }
 
-export default Contact 
+export default Footer 

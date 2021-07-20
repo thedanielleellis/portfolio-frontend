@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-class CommentInput extends Component {
+class CommentInput extends React.Component {
   state = {
     author: '',
     email: '',
