@@ -3,7 +3,7 @@ const projectsReducer = (state = {
     loading: false,
     }, action) => {
     switch (action.type) {
-        case "LOAD_PROJECTS":
+        case "LOADING_PROJECTS":
             return {
                 ...state,
                 allProjects: [...state.allProjects],
@@ -21,4 +21,4 @@ const projectsReducer = (state = {
     }
 }
 
-export default projectsReducer;
+export default projectsReducer; 

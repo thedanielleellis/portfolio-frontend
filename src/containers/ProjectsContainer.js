@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 import ProjectList from '../components/projects/ProjectList'
 import ProjectDetails from '../components/projects/ProjectDetails'
-import { fetchProjects } from "../actions/fetchProjects";
+import fetchProjects from "../actions/fetchProjects";
 
 
 class ProjectsContainer extends React.Component {
@@ -14,21 +14,24 @@ class ProjectsContainer extends React.Component {
     render() {
         return (
           <div id='projects-container' className='component'>
-                < >
-                  <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} />} />
-                  <Route exact path='/projects' render={() =>
-                    <div id='portfolio'>
-                      <h1>PORTFOLIO</h1>
-                      <h3>My Latest Projects</h3>
-                      <ProjectList />
-                    </div>
-                  } />
-                </ >
-        
-            </div >
+            < >
+              <div id='portfolio'>
+                <h1>PROJECTS</h1> <br></br>
+                <ProjectList allProjects={this.props.allProjects} />
+              </div>
+            </>
+          </div>
+
+          
         )
       
     }
+}
+
+const mapStateToProps = state => {
+  return {
+    allProjects: state.projects.allProjects,
+  }
 }
 
 const mapDispatchToProps = dispatch => {
@@ -37,4 +40,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
       
-export default connect(null, mapDispatchToProps)(ProjectsContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(ProjectsContainer) 
