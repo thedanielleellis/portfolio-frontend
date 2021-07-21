@@ -1,15 +1,15 @@
 import React from 'react';
 import ProjectCard from './ProjectCard'
 
-const ProjectList = () => {
-  
+const ProjectList = ({allProjects}) => {
+  const renderProjects = allProjects.map(project => {
+    return <ProjectCard key={project.id} project={project} />
+  })
   
 
   return (
     < >
-       
-        <i>There are no matching results.</i>
-    
+       {renderProjects}    
     </ >
   )
 }
