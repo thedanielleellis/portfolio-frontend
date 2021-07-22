@@ -17,10 +17,13 @@ class ProjectsContainer extends React.Component {
           <div id='projects-container' className='component'>
             < >
             <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={allProjects} />} />
+            <Route exact path='/projects' render={() =>  
               <div id='portfolio'>
                 <h1>PROJECTS</h1> <br></br>
                 <ProjectList allProjects={this.props.allProjects} />
               </div>
+              } />
+
             </>
           </div>
 

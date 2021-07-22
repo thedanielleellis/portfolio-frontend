@@ -13,6 +13,7 @@ const ProjectCard = ({project}) => {
             <h4>{project.attributes.name}</h4>
           </Link>
           <img className='project-thumbnail' alt='project thumbnail' src={img} />
+        <hr />
         </div >
       );
 };
