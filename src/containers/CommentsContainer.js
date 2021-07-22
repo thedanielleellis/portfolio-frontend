@@ -16,7 +16,7 @@ class CommentsContainer extends React.Component {
           projectId={this.props.project.id}
         />
 
-      {this.props.project.comments.length > 0 ?
+      {this.props.project.comments ?
           <CommentList projectComments={this.props.project.comments} />
           :
           <i>This project does not have any comments yet.</i>
