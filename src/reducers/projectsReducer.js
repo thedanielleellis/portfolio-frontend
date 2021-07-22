@@ -18,6 +18,7 @@ const projectsReducer = (state = {
         case 'ADD_COMMENT':
             return {
                 ...state,
+                comments: action.comment
             }
             
         default:

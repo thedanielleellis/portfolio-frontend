@@ -1,9 +1,10 @@
 import React from 'react';
-import Comment from './Comment';
+import CommentCard from './CommentCard';
 
-const Comments = ({ projectComments }) => {
+
+const CommentList = ({ projectComments }) => {
   const renderComments = projectComments.map(comment => {
-    return <Comment key={comment.id} comment={comment} />
+    return <CommentCard key={comment.id} comment={comment} />
   })
 
   return (
@@ -14,4 +15,4 @@ const Comments = ({ projectComments }) => {
   );
 };
 
-export default Comments;
+export default CommentList; 

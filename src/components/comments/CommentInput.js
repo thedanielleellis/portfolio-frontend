@@ -61,7 +61,7 @@ class CommentInput extends Component {
                     onChange={this.handleOnChange}
                   />
                   <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
+                    We will never share your email.
                   </Form.Text>
                 </Form.Group>
               </Col>

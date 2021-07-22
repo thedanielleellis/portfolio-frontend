@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
-import Comments from '../components/comments/Comments'
+import CommentList from '../components/comments/CommentList'
 import CommentInput from '../components/comments/CommentInput'
 import addComment from "../actions/addComment";
 import { connect } from 'react-redux';
 
 class CommentsContainer extends Component {
+  
   render() {
     return (
+      
       <div id='comments-container'>
         <CommentInput
           addComment={this.props.addComment}
           projectId={this.props.project.id}
         />
+
         {this.props.project.comments ?
-          <Comments
+          <CommentList
             projectComments={this.props.project.comments}
           />
           :
@@ -23,4 +26,4 @@ class CommentsContainer extends Component {
     )
   }
 }
-export default connect(null, { addComment })(CommentsContainer);
+export default connect(null, { addComment })(CommentsContainer); 
