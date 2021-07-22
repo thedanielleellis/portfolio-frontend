@@ -11,19 +11,27 @@ class CommentInput extends Component {
     content: '',
   }
 
+  // Fired everytime form changes
   handleOnChange = event => {
+    // Abstracting `setState` - name attrs matching keys in state
+    // new state values used to set value attrs of inputs
+    // component re-renders the input w/ new updated value
     this.setState({
       [event.target.name]: event.target.value,
     });
   }
 
   handleOnSubmit = event => {
+    // Prevent submit event to redirect browser to new URL
     event.preventDefault()
+    // Sets property of projectId on comment input from parent components id
     const comment = {
       ...this.state,
       project_id: this.props.projectId,
     }
+    // Send State to our addComment action creator
     this.props.addComment(comment);
+    // Update component state to return to default state
     this.setState({
       author: '',
       email: '',
@@ -33,6 +41,8 @@ class CommentInput extends Component {
 
   render() {
     return (
+      // Controlled form - form dervives its input values from state
+      // explicitly set value of component using state + update value in resp to changes
       <div className='comment-form'>
         <Card>
           <Form role="form" className='clearfix' onSubmit={this.handleOnSubmit}>
@@ -61,7 +71,7 @@ class CommentInput extends Component {
                     onChange={this.handleOnChange}
                   />
                   <Form.Text className="text-muted">
-                    We will never share your email.
+                    We'll never share your email with anyone else.
                   </Form.Text>
                 </Form.Group>
               </Col>
@@ -88,4 +98,4 @@ class CommentInput extends Component {
   }
 };
 
-export default CommentInput; 
+export default CommentInput;
