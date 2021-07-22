@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 
 const ProjectDetails = ({ match, projects }) => {
-    const project = projects.find(proj => proj.id.toString() === match.params.projectId)
+  const project = projects.find(proj => proj.id.toString() === match.params.projectId)
   
-    const renderProject = () => {
-        const fileName = project.image_url
-        const images = require.context('../../images', true)
-        let img = images('./' + fileName)
+  const renderProject = () => {
+      const fileName = project.attributes.image_url
+      const images = require.context('../../images', true)
+      let img = images('./' + fileName).default
 
         return [
             <Container>
@@ -17,26 +17,33 @@ const ProjectDetails = ({ match, projects }) => {
               </Link>
       
               <div className='component'>
-                <h3>{project.name}</h3>
+                <h3>{project.attributes.name}</h3>
                 <img className='project-thumbnail' alt='project thumbnail' src={img} />
                 <div className='text' id='project-text'>
-                  <h6>What is it?</h6>
-                  <p>{project.description}</p>
+                  <h6>Description</h6>
+                  <p>{project.attributes.description}</p>
                 </div>
-                {project.blog_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.blog_url, "_blank")}>BLOG POST</button> : null}
-                {project.github_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.github_url, "_blank")}>SOURCE CODE</button> : null}
-                {project.demo_vid ?
+                {project.attributes.blog_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.attributes.blog_url, "_blank")}>BLOG POST</button> : null}
+                {project.attributes.github_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.attributes.github_url, "_blank")}>SOURCE CODE</button> : null}
+                {project.attributes.demo_vid ?
                   <div>
                     <h5>Project Demo</h5>
-                    <iframe title="Umami Pantry Demo" width="560" height="315" src={project.demo_vid} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                    <iframe title="Demo" width="560" height="315" src={project.attributes.demo_vid} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                   </div>
                   :
                   null
                 }
               </div>
             </Container>
-        ]
+       ]
       }
-    }
+
+  return (
+  < >
+    {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>}
+  </>
+  )
+}
+  
 
 export default ProjectDetails
