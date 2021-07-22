@@ -15,6 +15,11 @@ const projectsReducer = (state = {
                 allProjects: action.projects,
                 loading: false
             }
+        case 'ADD_COMMENT':
+            return {
+                ...state,
+                comments: project.comments.concat(action.comment),               
+            }
             
         default:
             return state;
