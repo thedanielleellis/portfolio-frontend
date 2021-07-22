@@ -4,7 +4,7 @@ import CommentCard from './CommentCard';
 
 const CommentList = ({ projectComments }) => {
   const renderComments = projectComments.map(comment => {
-    return <Comment key={comment.id} comment={comment} />
+    return <CommentCard key={comment.id} comment={comment} />
   })
 
   return (

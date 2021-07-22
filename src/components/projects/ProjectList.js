@@ -1,18 +1,19 @@
 import React from 'react';
 import ProjectCard from './ProjectCard'
 
-const ProjectList = ({allProjects}) => {
-  const renderProjects = allProjects.map(project => 
+const ProjectList = ({ filteredProjects }) => {
+  const renderProjects = filteredProjects.map(project =>
     <ProjectCard key={project.id} project={project} />
   )
   
 
   return (
     < >
-       {renderProjects}    
-       :
-       <i>There are no matching results.</i>
-
+      {(filteredProjects.length > 0) ?
+        renderProjects
+        :
+        <i>There are no matching results.</i>
+      }
     </ >
   )
 }
