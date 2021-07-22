@@ -33,6 +33,8 @@ const ProjectDetails = ({ match, projects }) => {
                   :
                   null
                 }
+                <hr />
+
               </div>
             </Container>
        ]
