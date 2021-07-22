@@ -22,4 +22,4 @@ const CommentCard = ({ comment }) => {
   );
 } 
 
-export default CommentCard;
+export default CommentCard; 
