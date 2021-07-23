@@ -2,7 +2,7 @@ import React from 'react';
 import Moment from 'react-moment';
 import Card from 'react-bootstrap/Card';
 
-const CommentCard = ({ comment }) => {
+const Comment = ({ comment }) => {
   return (
     <div className='comment-card'>
       <Card
@@ -20,6 +20,6 @@ const CommentCard = ({ comment }) => {
       </Card >
     </div>
   );
-} 
+}
 
-export default CommentCard; 
+export default Comment;

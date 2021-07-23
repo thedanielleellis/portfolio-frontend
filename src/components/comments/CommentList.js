@@ -3,9 +3,9 @@ import CommentCard from './CommentCard';
 
 
 const CommentList = ({ projectComments }) => {
-  const renderComments = projectComments.map(comment => 
-    <CommentCard key={comment.id} comment={comment} />
-  )
+  const renderComments = projectComments.map(comment => {
+    return <CommentCard key={comment.id} comment={comment} />
+  })
 
   return (
     <div className='comments'>
