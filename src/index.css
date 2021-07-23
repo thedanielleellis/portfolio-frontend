@@ -11,8 +11,8 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   background-image: url("https://i.imgur.com/prrmSTk.jpg");
-  overflow-x: hidden;
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
