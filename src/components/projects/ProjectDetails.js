@@ -14,7 +14,7 @@ const ProjectDetails = ({ match, projects }) => {
         return [
             <Container>
               <Link to={'/projects'}>
-                <button className='btn btn-outline-secondary'>&laquo; BACK</button>
+                <button className='btn btn-outline-dark'>&laquo; BACK</button>
               </Link>
       
               <div className='component'>
@@ -24,8 +24,8 @@ const ProjectDetails = ({ match, projects }) => {
                   <h6>Description</h6>
                   <p>{project.attributes.description}</p>
                 </div>
-                {project.attributes.blog_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.attributes.blog_url, "_blank")}>BLOG POST</button> : null}
-                {project.attributes.github_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.attributes.github_url, "_blank")}>SOURCE CODE</button> : null}
+                {project.attributes.blog_url ? <button className="btn btn-outline-dark btn-lg" onClick={() => window.open(project.attributes.blog_url, "_blank")}>BLOG POST</button> : null}
+                {project.attributes.github_url ? <button className="btn btn-outline-dark btn-lg" onClick={() => window.open(project.attributes.github_url, "_blank")}>SOURCE CODE</button> : null}
                 {project.attributes.demo_vid ?
                   <div>
                     <h5>Project Demo</h5>
