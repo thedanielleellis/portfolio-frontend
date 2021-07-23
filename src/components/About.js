@@ -6,7 +6,7 @@ const About = () => {
       <div className='text' id='about-text'>
         <h1>ABOUT ME</h1>
         <div className='text-section'>
-          <h6>This is a paragraph all about ME! Occaecat mollit deserunt adipisicing exercitation eiusmod nulla duis ut irure laborum officia tempor. Anim excepteur qui velit eu cupidatat ipsum nostrud duis nisi eiusmod deserunt id. Magna irure velit id irure id sint incididunt adipisicing officia. Aliquip in cillum qui eu irure eiusmod. Nulla reprehenderit in voluptate culpa enim in enim ipsum ea dolore nostrud cupidatat. Aliqua dolore cupidatat consequat aliqua minim proident. Ipsum reprehenderit ullamco quis aute velit.
+          <h6>This is a paragraph all about ME! Full Stack Software Developer with a passion for applying new technologies to enhance the professional and innovative atmosphere of an organization and working with dedicated teams to build efficient and robust applications. With a background in executive administration, I know how to prioritize competing tasks under pressure, meet deadlines, and deliver a quality product for the client.
 
           Ipsum occaecat ipsum pariatur dolore aute eu reprehenderit exercitation occaecat sint culpa mollit anim veniam. Deserunt amet incididunt commodo magna esse commodo ullamco. Ad amet nisi nisi mollit ullamco id et quis.</h6>
           <br></br>

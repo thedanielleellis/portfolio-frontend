@@ -10,9 +10,7 @@ const ProjectList = ({allProjects}) => {
   return (
     < >
        {renderProjects}    
-       :
-       <i>There are no matching results.</i>
-
+       
     </ >
   )
 }
