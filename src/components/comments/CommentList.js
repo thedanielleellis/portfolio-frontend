@@ -15,4 +15,4 @@ const CommentList = ({ projectComments }) => {
   );
 };
 
-export default CommentList; 
+export default CommentList;
