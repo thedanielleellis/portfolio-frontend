@@ -15,11 +15,6 @@ const projectsReducer = (state = {
                 allProjects: action.projects,
                 loading: false
             }
-        case 'ADD_COMMENT':
-            return {
-                ...state,
-                comments: action.comment
-            }
             
         default:
             return state;

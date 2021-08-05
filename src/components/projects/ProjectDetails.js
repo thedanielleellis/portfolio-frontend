@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
-import CommentsContainer from '../../containers/CommentsContainer'
 
 const ProjectDetails = ({ match, projects }) => {
   const project = projects.find(proj => proj.id.toString() === match.params.projectId)
@@ -35,7 +34,6 @@ const ProjectDetails = ({ match, projects }) => {
                   null
                 }
                 <hr />
-                <CommentsContainer project={project} />
               </div>
             </Container>
        ]
