@@ -10,11 +10,11 @@ import App from './App';
 
 
 
-//Store Set up
+//Store Set up, tell app to communicate with devtools extension 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
 
-
+//to reduce having to pass store as a prop, wrap App with a Provider. We can access store & dispatch actions from any component 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
